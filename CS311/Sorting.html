@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sorting Algorithms</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="para.png" class="logo" />
+      <h1 class="heading">Sorting Algorithms</h1>
+    </div>
+    <div class="b">
+      <div id="inputs">
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="" maxlength="2" type="text" />
+        <input value="Random" onclick="randomise();" type="button"/><br/>
+        <label>
+          <em>Algorithms</em>:
+          <select class="box" id="sort_type">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="quick">Quick sort</option>
+          </select>
+        </label>
+        <div style="display: inline-block">
+          <label>
+            <em>Speed (Fast - Slow)</em>:
+            <input type="range" min="100" max="2000" id="interval" oninput="change_interval();" onchange="change_interval();" value="1000" style="width: 80px; vertical-align: middle;"/>
+          </label>
+          <input name="start" value="Go" onclick="start_sort();" type="button"
+          />
+        </div>
+      </div>
+      <h3>Display</h3>
+      <div id="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <input value="Next" id="next" disabled="disabled" type="button" />
+      </div>
+      <div id="commentary"></div>
+    </div>
+    <script src="fun.js"></script>
+  </body>
+</html>

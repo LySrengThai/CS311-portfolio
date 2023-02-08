@@ -1,0 +1,219 @@
+body, html{
+    font-family: "JetBrains Mono",monospace;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3.3%;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #B5FFFC 0%, #FFDEE9 100%);
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 auto;
+    background-image: linear-gradient( 135deg,#00EAFF 10%, #3C8CE7 100%);
+    color: black;
+    border-bottom: 3px solid #000;
+  }
+  
+.logo {
+    width: 10%;
+    height: auto;
+    margin-right: 30%;
+    margin-left: 1%;
+}
+  
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    background: -webkit-linear-gradient(#FFDEE9, #B5FFFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.b{
+    margin: 1%;
+    padding: 5%;
+    margin-top: 5%;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#inputs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 200%;
+  }
+  #inputs [type~="text"] {
+    max-width: 50px;
+    height: min(30px, 7.5vw);
+    text-align: center;
+    font-size: 14px;
+    font-family: "JetBrains Mono",monospace;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    margin: 0.3vw 0.2vw;
+  }
+  #inputs [type~="text"]:focus {
+    border: 3px solid blue;
+  }
+
+  #inputs [type~="button"] {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#inputs [type~="button"]:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+#inputs [type~="button"]:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+#inputs [type~="button"]:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.box {
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+    font-family: "JetBrains Mono",monospace;
+    text-transform: uppercase;
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#cards {
+    width: 100%;
+    height: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+.card {
+    width: 7.6vw;
+    max-width: 70px;
+    margin: 0 0.2vw;
+    height: min(56px, 7.5vw);
+    border: 2px solid black;
+    color: #000000;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    font-family: "JetBrains Mono",monospace;
+    font-size: min(2.7vw, 24px);
+    font-weight: bold;
+    padding-top: min(2vw, 13px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px #ccc;
+}
+
+#next{
+    align-items: center;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    font-family: "JetBrains Mono",monospace;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 16px;
+    clear: left;
+    display: block;
+    width: 60px;
+    margin: 0 auto 10px auto;
+}
+#next:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+#next:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+#next:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+#commentary {
+    display: block;
+    height: 130px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    line-height: 120% !important;
+    text-align: center;
+    font-family: "JetBrains Mono",monospace;
+    box-shadow: 10px 10px #ccc;
+    background-color: #FCFCFD;
+}
+#commentary p {
+    margin: 3px 0 !important;
+    text-align: center !important;
+}
+#commentary h3 {
+    line-height: 120%;
+    color: black;
+    font-weight: normal;
+    text-align: center !important;
+}
+#bubble {
+    display: block;
+}
